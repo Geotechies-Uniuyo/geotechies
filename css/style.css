@@ -15,7 +15,7 @@ body {
 }
 
 header {
-    background: rgb(11, 197, 11);
+    background-color: #10b436;
     position: fixed;
     font-style: normal;
     font-weight: bold;
@@ -37,6 +37,10 @@ header {
     margin: auto;
 }
 
+.active {
+    color: green;
+}
+
 #navbar a {
     display: block;
     padding: 0.5rem;
@@ -48,9 +52,56 @@ header {
     display: block;
 }
 
+/*Dropdoewn*/
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+ 
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
+
+
+
 .ham {
     font-size: 25px;
-    color: #144A05;
+    color: #FFF;
     position: absolute;
     display: block;
     right: 0;
@@ -79,6 +130,7 @@ header {
 .show button {
     margin-top: 7%;
     padding: 4%;
+    width: 45%;
     border: none;
     outline: none;
     cursor: pointer;
@@ -117,13 +169,12 @@ footer {
 
 /** Tablet **/
 @media (min-width: 768px) {
-
+   
 }
 
 
 @media (min-width: 850px) {
     header {
-        background: rgb(11, 197, 11);
         position: fixed;
         font-style: normal;
         font-weight: bold;
@@ -161,9 +212,7 @@ footer {
     }
 
     .nav-button {
-        border: solid #000000 1px;
         padding: 5px;
-        border-radius: 5px;
         margin: 0;
         width: 100px;
         display: block;
@@ -191,7 +240,6 @@ footer {
 /* Extra Large (xl) e.g. Laptop & Desktop */
 @media (min-width: 1024px) {
     header {
-        background: rgb(11, 197, 11);
         position: fixed;
         font-style: normal;
         font-weight: bold;
@@ -219,16 +267,6 @@ footer {
         font-size: 15px;
     }
 
-    .nav-button {
-        border: solid #000000 1px;
-        padding: 5px;
-        border-radius: 5px;
-        margin: 0;
-        width: 100px;
-        display: block;
-        margin-left: unset;
-        margin-right: unset;
-    }
 
     .nav-items {
         width: 90%;
