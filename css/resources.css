@@ -1,0 +1,69 @@
+.board {
+    height: 50vh;
+    background-color: cadetblue;
+    padding-top: 5em;
+    text-align: center;
+}
+
+.search{
+    position: relative;
+  }
+  
+  .search .search-bar{
+    width: 90%;
+    position: relative;
+    margin-top: 25px;
+    padding:15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 500px;
+    outline: none;
+    border: 1px solid #dedede;
+  }
+  
+  .search-bar:hover{
+    box-shadow: 2px 0px 8px 0 #dedede;
+  }
+  
+  .search .material-icons{
+    position: absolute;
+    display: block;
+    text-align: center;
+    bottom: 12px;
+    left: 20px;
+    color:rgb(167, 160, 160);
+  }
+
+  
+  /* Extra Large (xl) e.g. Laptop & Desktop */
+@media (min-width: 1024px) {
+        .search{
+            position: relative;
+          }
+          
+          .search .search-bar{
+            width: 60%;
+            position: relative;
+            margin-top: 25px;
+            padding:15px;
+            padding-left: 50px;
+            padding-right: 50px;
+            border-radius: 500px;
+            outline: none;
+            border: 1px solid #dedede;
+          }
+          
+          .search-bar:hover{
+            box-shadow: 2px 0px 8px 0 #dedede;
+          }
+          
+          .search .material-icons{
+            position: absolute;
+            display: block;
+            text-align: center;
+            bottom: 12px;
+            left: 20px;
+            color:rgb(167, 160, 160);
+          }
+        
+}
